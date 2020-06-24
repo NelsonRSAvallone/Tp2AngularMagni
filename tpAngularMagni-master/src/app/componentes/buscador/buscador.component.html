@@ -1,0 +1,8 @@
+<h1>Buscando: {{termino}} </h1>
+<div class="card-deck">
+  <app-item-intrumento (instrumentoSeleccionado)= "verPlato($event)" 
+  *ngFor="let intruLocal of intruArr;let i = index" [intruAux]="intruLocal"
+  [index]="intruLocal.id">
+  </app-item-intrumento>
+
+  </div>
